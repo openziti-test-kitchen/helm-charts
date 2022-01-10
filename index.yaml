@@ -2,15 +2,15 @@ apiVersion: v1
 entries:
   prometheus:
   - apiVersion: v2
-    appVersion: 2.31.1
-    created: "2022-01-10T13:41:28.052722-05:00"
+    appVersion: 0.0.5
+    created: "2022-01-10T14:16:04.525125-05:00"
     dependencies:
     - condition: kubeStateMetrics.enabled
       name: kube-state-metrics
       repository: https://prometheus-community.github.io/helm-charts
       version: 4.0.*
     description: Prometheus is a monitoring system and time series database.
-    digest: 15296e761cf075cdde2154378f5131c0390ce04c827d840386f0a5ba351e4f85
+    digest: 9bb437e2fd11b038c5a110afc47a3632fa2fecb8be1598534de10fb6fc8f34d6
     home: https://prometheus.io/
     icon: https://raw.githubusercontent.com/prometheus/prometheus.github.io/master/assets/prometheus_logo-cb55bb5c346.png
     maintainers:
@@ -35,4 +35,4 @@ entries:
     urls:
     - prometheus-0.0.1.tgz
     version: 0.0.1
-generated: "2022-01-10T13:41:28.037005-05:00"
+generated: "2022-01-10T14:16:04.517994-05:00"
