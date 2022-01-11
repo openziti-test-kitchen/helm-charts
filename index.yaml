@@ -1,0 +1,14 @@
+apiVersion: v1
+entries:
+  reflect:
+  - apiVersion: v2
+    appVersion: 0.0.1
+    created: "2022-01-11T13:38:58.308904-05:00"
+    description: A Helm chart for Kubernetes
+    digest: cda7ac94eda648dd9ba835766639b104c070b4e43efc12ffa8fe853740c5cb6d
+    name: reflect
+    type: application
+    urls:
+    - reflect-0.1.0.tgz
+    version: 0.1.0
+generated: "2022-01-11T13:38:58.306153-05:00"

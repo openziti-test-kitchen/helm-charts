@@ -1,6 +1,0 @@
-apiVersion: v1
-kind: ConfigMap
-metadata:
-  name: reflect-identity-file
-data:
-  reflect-server.json: {{ .Values.reflectIdentity | quote }}
