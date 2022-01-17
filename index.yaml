@@ -1,36 +1,46 @@
 apiVersion: v1
 entries:
-  traefik:
+  prometheus:
   - apiVersion: v2
-    appVersion: 1.2.0
-    created: "2022-01-12T17:10:08.906086-05:00"
-    description: A Traefik based Kubernetes ingress controller
-    digest: 6ea8b27a02c384eba413f5ad2496129eb332b836475988363b2b52bb1e345e33
-    home: https://traefik.io/
-    icon: https://raw.githubusercontent.com/traefik/traefik/v2.3/docs/content/assets/img/traefik.logo.png
-    keywords:
-    - traefik
-    - ingress
+    appVersion: 0.0.5
+    created: "2022-01-17T17:12:04.595321-05:00"
+    dependencies:
+    - condition: kubeStateMetrics.enabled
+      name: kube-state-metrics
+      repository: https://prometheus-community.github.io/helm-charts
+      version: 4.0.*
+    description: Prometheus is a monitoring system and time series database.
+    digest: 116b5205e6659485cbdcda902c6969f9b348489218e902fc1eaf8bd380ef8fb0
+    home: https://prometheus.io/
+    icon: https://raw.githubusercontent.com/prometheus/prometheus.github.io/master/assets/prometheus_logo-cb55bb5c346.png
     maintainers:
-    - email: emile@vauge.com
-      name: emilevauge
-    - email: daniel.tomcej@gmail.com
-      name: dtomcej
-    - email: ldez@traefik.io
-      name: ldez
-    name: traefik
+    - email: gianrubio@gmail.com
+      name: gianrubio
+    - email: zanhsieh@gmail.com
+      name: zanhsieh
+    - email: miroslav.hadzhiev@gmail.com
+      name: Xtigyro
+    - email: monotek23@gmail.com
+      name: monotek
+    - email: naseem@transit.app
+      name: naseemkullah
+    name: prometheus
     sources:
-    - https://github.com/traefik/traefik
-    - https://github.com/traefik/traefik-helm-chart
+    - https://github.com/prometheus/alertmanager
+    - https://github.com/prometheus/prometheus
+    - https://github.com/prometheus/pushgateway
+    - https://github.com/prometheus/node_exporter
+    - https://github.com/kubernetes/kube-state-metrics
     type: application
     urls:
-    - traefik-0.0.2.tgz
-    version: 0.0.2
+    - prometheus-0.0.1.tgz
+    version: 0.0.1
+  traefik:
   - apiVersion: v2
     appVersion: 1.1.9
-    created: "2022-01-12T17:10:08.904389-05:00"
+    created: "2022-01-17T17:12:04.597125-05:00"
     description: A Traefik based Kubernetes ingress controller
-    digest: 4c4f4518f1b6bdd0fc266c88d5e3397744d7fec237761ced880a6f9597a4f2c0
+    digest: eac5c8499887e1f9ca9c321a882fb1e5cea88c947dcdba22d3b4195877f7e792
     home: https://traefik.io/
     icon: https://raw.githubusercontent.com/traefik/traefik/v2.3/docs/content/assets/img/traefik.logo.png
     keywords:
@@ -51,4 +61,4 @@ entries:
     urls:
     - traefik-0.0.1.tgz
     version: 0.0.1
-generated: "2022-01-12T17:10:08.902181-05:00"
+generated: "2022-01-17T17:12:04.5884-05:00"
