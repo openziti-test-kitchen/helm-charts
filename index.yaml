@@ -2,15 +2,15 @@ apiVersion: v1
 entries:
   prometheus:
   - apiVersion: v2
-    appVersion: 0.0.6
-    created: "2022-02-07T12:12:34.039269-05:00"
+    appVersion: 0.0.7
+    created: "2022-02-07T13:37:05.840822-05:00"
     dependencies:
     - condition: kubeStateMetrics.enabled
       name: kube-state-metrics
       repository: https://prometheus-community.github.io/helm-charts
       version: 4.0.*
     description: Prometheus is a monitoring system and time series database.
-    digest: 4b14b77988c4ebf4949ce8eaa515a66496ba8c8c36b9aa744c5118861955428c
+    digest: b61c298ed974457ad8cdd1078880eecbc5ff2bdb1236951837d2dcb7ee0a4c87
     home: https://prometheus.io/
     icon: https://raw.githubusercontent.com/prometheus/prometheus.github.io/master/assets/prometheus_logo-cb55bb5c346.png
     maintainers:
@@ -37,7 +37,7 @@ entries:
     version: 0.0.2
   - apiVersion: v2
     appVersion: 0.0.5
-    created: "2022-02-07T12:12:34.034012-05:00"
+    created: "2022-02-07T13:37:05.8361-05:00"
     dependencies:
     - condition: kubeStateMetrics.enabled
       name: kube-state-metrics
@@ -72,7 +72,7 @@ entries:
   reflect:
   - apiVersion: v2
     appVersion: 0.0.4
-    created: "2022-02-07T12:12:34.039897-05:00"
+    created: "2022-02-07T13:37:05.841408-05:00"
     description: A Helm chart for Kubernetes
     digest: c48aa9af9a0f32a73b0a4df785185c82bed75e9977191078478f4f285dd3620c
     name: reflect
@@ -83,7 +83,7 @@ entries:
   traefik:
   - apiVersion: v2
     appVersion: 1.2.0
-    created: "2022-02-07T12:12:34.049532-05:00"
+    created: "2022-02-07T13:37:05.851947-05:00"
     description: A Traefik based Kubernetes ingress controller
     digest: 0b11460e760df1c72547b41bcf44c1690df85099ce456cd6e6eb472f8768365c
     home: https://traefik.io/
@@ -108,7 +108,7 @@ entries:
     version: 0.0.4
   - apiVersion: v2
     appVersion: 1.1.9
-    created: "2022-02-07T12:12:34.048039-05:00"
+    created: "2022-02-07T13:37:05.849884-05:00"
     description: A Traefik based Kubernetes ingress controller
     digest: fb52af410f26fdd4697cf1f0fadd4d24e1a5472c6d5a7dedd07e92c51f6f9d2a
     home: https://traefik.io/
@@ -133,7 +133,7 @@ entries:
     version: 0.0.3
   - apiVersion: v2
     appVersion: 1.2.0
-    created: "2022-02-07T12:12:34.046437-05:00"
+    created: "2022-02-07T13:37:05.848169-05:00"
     description: A Traefik based Kubernetes ingress controller
     digest: 843cfc2da63e85d59f895554e358c647e0890c914656f6d7b0f9b37c1a8b3ab4
     home: https://traefik.io/
@@ -158,7 +158,7 @@ entries:
     version: 0.0.2
   - apiVersion: v2
     appVersion: 1.1.9
-    created: "2022-02-07T12:12:34.041567-05:00"
+    created: "2022-02-07T13:37:05.843101-05:00"
     description: A Traefik based Kubernetes ingress controller
     digest: eac5c8499887e1f9ca9c321a882fb1e5cea88c947dcdba22d3b4195877f7e792
     home: https://traefik.io/
@@ -181,4 +181,4 @@ entries:
     urls:
     - traefik-0.0.1.tgz
     version: 0.0.1
-generated: "2022-02-07T12:12:34.026676-05:00"
+generated: "2022-02-07T13:37:05.826354-05:00"
