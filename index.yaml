@@ -3,6 +3,32 @@ entries:
   prometheus:
   - apiVersion: v2
     appVersion: 0.0.13
+    created: "2022-04-20T00:11:55.46912128Z"
+    dependencies:
+    - condition: kubeStateMetrics.enabled
+      name: kube-state-metrics
+      repository: https://prometheus-community.github.io/helm-charts
+      version: 4.0.*
+    description: Prometheus is a monitoring system and time series database.
+    digest: cd887ed76d87bed2d9b29b4cb02bd14ad22baa4c903e307d4bd89bdc634fb9eb
+    home: https://prometheus.io/
+    icon: https://raw.githubusercontent.com/prometheus/prometheus.github.io/master/assets/prometheus_logo-cb55bb5c346.png
+    maintainers:
+    - email: help.openziti.org
+      name: OpenZiti
+    name: prometheus
+    sources:
+    - https://github.com/prometheus/alertmanager
+    - https://github.com/prometheus/prometheus
+    - https://github.com/prometheus/pushgateway
+    - https://github.com/prometheus/node_exporter
+    - https://github.com/kubernetes/kube-state-metrics
+    type: application
+    urls:
+    - https://github.com/openziti-test-kitchen/helm-charts/releases/download/prometheus-0.0.9/prometheus-0.0.9.tgz
+    version: 0.0.9
+  - apiVersion: v2
+    appVersion: 0.0.13
     created: "2022-04-20T00:01:33.940737951Z"
     dependencies:
     - condition: kubeStateMetrics.enabled
@@ -226,4 +252,4 @@ entries:
     urls:
     - reflect-0.3.0.tgz
     version: 0.3.0
-generated: "2022-04-20T00:01:33.940771952Z"
+generated: "2022-04-20T00:11:55.469854986Z"
